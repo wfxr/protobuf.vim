@@ -39,8 +39,8 @@ syn match pbFuncName  /\s\+\w\+/ contained skipwhite skipnl
 syn match pbTypeName  /\s\+\w\+/ contained skipwhite skipnl
 syn match pbEnumField /^\s*\w\+/ contained skipwhite skipnl
 
-syn region pbComment  start="\/\*"             end="\*\/" contains=pbCommentGroup
-syn region pbComment  start="//"               skip="\\$" end="$" keepend contains=pbCommentGroup
+syn region pbComment  start="\/\*"             end="\*\/" contains=@pbCommentGroup
+syn region pbComment  start="//"               skip="\\$" end="$" keepend contains=@pbCommentGroup
 syn region pbString   start=/"/                skip=/\\./ end=/"/
 syn region pbString   start=/'/                skip=/\\./ end=/'/
 syn region pbFunction start=/rpc\s/            end=/$/    contains=pbFuncName
