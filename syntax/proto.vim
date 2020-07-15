@@ -37,7 +37,7 @@ syn match pbFloat     /\<-\?\d*\(\.\d*\)\?/
 syn match pbKey       /\w\+\:/
 syn match pbFuncName  /\s\+\w\+/ contained skipwhite skipnl
 syn match pbTypeName  /\s\+\w\+/ contained skipwhite skipnl
-syn match pbEnumField /^\s*\w\+/     contained skipwhite skipnl
+syn match pbEnumField /^\s*\w\+/ contained skipwhite skipnl
 
 syn region pbComment  start="\/\*"             end="\*\/" contains=pbCommentGroup
 syn region pbComment  start="//"               skip="\\$" end="$" keepend contains=pbCommentGroup
@@ -58,8 +58,8 @@ HiLink pbPackage Statement
 HiLink pbOption  Operator
 
 HiLink pbOneof    Structure
-HiLink pbTypeDecl Typedef
-HiLink pbEnumDecl Typedef
+HiLink pbTypeDecl Keyword
+HiLink pbEnumDecl Keyword
 
 HiLink pbModifier StorageClass
 HiLink pbRPCDecl  Structure
@@ -69,8 +69,8 @@ HiLink pbReturns  Special
 HiLink pbKey       Identifier
 HiLink pbFuncName  Function
 HiLink pbTypeName  Type
-HiLink pbDefault   Keyword
-HiLink pbExtend    Keyword
+HiLink pbDefault   Tag
+HiLink pbExtend    Tag
 HiLink pbType      Type
 HiLink pbBool      Boolean
 HiLink pbInt       Number
@@ -82,3 +82,4 @@ HiLink pbEnumField Constant
 delcommand HiLink
 
 let b:current_syntax = "proto"
+" vim: et sw=2 sts=2

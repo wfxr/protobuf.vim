@@ -1,1 +1,1 @@
-# proto.vim
+# protobuf.vim
