@@ -8,16 +8,14 @@ Better vim syntax highlighting and indent plugin for [Protobuf](https://github.c
 
 [uarun/vim-protobuf](https://github.com/uarun/vim-protobuf) highlighting (left) **vs** [protobuf.vim](https://github.com/wfxr/protobuf.vim) highlighting (right)
 
-### 📥 Installation
-
-**Plug**
+### Installation
 
 ```vim
 Plug '~/develop/protobuf.vim'
 ```
-### 💡 Inspirations
+### Inspirations
 - [uarun/vim-protobuf](https://github.com/uarun/vim-protobuf)
 
-### 📃 License
+### License
 
 [MIT](https://wfxr.mit-license.org/2020) (c) Wenxuan Zhang
