@@ -3,6 +3,8 @@ if exists("b:current_syntax")
   finish
 endif
 
+setl comments=s1:/*,mb:*,ex:*/,://
+
 syn case match
 
 syn keyword pbTodo contained TODO FIXME BUG XXX
