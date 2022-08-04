@@ -27,11 +27,11 @@ function! PbIndent(lnum)
 
   let l:ind = l:previ
 
-  if l:prevl =~ '[({]\s*$'
+  if l:prevl =~ '[\[({]\s*$'
     let l:ind += shiftwidth()
   endif
 
-  if l:thisl =~ '^\s*[)}]'
+  if l:thisl =~ '^\s*[)}\]]'
     let l:ind -= shiftwidth()
   endif
 
