@@ -11,7 +11,7 @@ Better vim syntax highlighting and indent plugin for [Protobuf](https://github.c
 ### Installation
 
 ```vim
-Plug '~/develop/protobuf.vim'
+Plug 'wfxr/protobuf.vim'
 ```
 ### Inspirations
 - [uarun/vim-protobuf](https://github.com/uarun/vim-protobuf)
